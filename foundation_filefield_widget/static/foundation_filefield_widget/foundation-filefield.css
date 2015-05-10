@@ -1,0 +1,13 @@
+.error > .filefield {
+    margin-bottom: 0;
+}
+
+.filefield {
+    margin-bottom: 1rem;
+}
+
+.file-input-replacer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}

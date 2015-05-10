@@ -1,0 +1,13 @@
+{% load i18n %}
+<div class="row collapse filefield">
+    <div id="{{id}}_container" class="small-6 columns filefield-container">
+        <input id="{{id}}_input_replacer" class="file-input-replacer compact prefix" type="text" value="{% if value %}{{value}}{% else %}{% trans "No file chosen" %}{% endif %}" disabled>
+        {{input}}
+    </div>
+    <div class="small-3 columns filefield-select">
+        <a id="{{id}}_select_button" onclick="$(this).parent().prev().children().trigger('click');" class="postfix button compact file-button-replacer">{% trans "Choose File" %}</a>
+    </div>
+    <div class="small-3 columns filefield-reset">
+        <a id="{{id}}_reset_button" onclick="$($(this).parent().prev().prev().children()[1]).replaceWith($($(this).parent().prev().prev().children()[1]).val('').clone(true));$($(this).parent().prev().prev().children()[0]).val('{% trans "No file chosen" %}')" class="postfix button compact secondary">{% trans "Clear" %}</a>
+    </div>
+</div>

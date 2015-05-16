@@ -20,7 +20,8 @@ class FoundationFileInput(forms.ClearableFileInput):
     def render(self, name, value, attrs=None):
         attrs = attrs or {}
         id = self.build_attrs(attrs, type=self.input_type, name=name)['id']
-        attrs.update({"onchange": "$(this).prev().val(this.value.replace('C:\\\\fakepath\\\\', ''));".format(id),
+        attrs.update({"onchange": "$(this).prev().val(this.value.replace('C:\\\\fakepath\\\\', ''));"
+                                  "$(this).prev()[0].onclick = null;".format(id),
                       "class": attrs.get("class", "") + " compact"})
 
         return mark_safe(render_to_string(self.template, {

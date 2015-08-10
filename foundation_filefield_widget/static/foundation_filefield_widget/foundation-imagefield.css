@@ -1,0 +1,23 @@
+.error > .imagefield {
+    margin-bottom: 0 !important;
+}
+
+.imagefield-preview {
+    width: 100%;
+}
+
+.imagefield {
+    margin-bottom: 1rem !important;
+}
+
+.imagefield-select {
+    overflow: hidden;
+}
+
+.imagefield-reset {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}

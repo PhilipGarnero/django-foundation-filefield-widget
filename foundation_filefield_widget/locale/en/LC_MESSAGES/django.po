@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-10 19:56+0200\n"
+"POT-Creation-Date: 2015-08-10 23:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: foundation_filefield_widget/templates/foundation_filefield_widget/foundation_filefield_widget.html:4
-#: foundation_filefield_widget/templates/foundation_filefield_widget/foundation_filefield_widget.html:11
+#: templates/foundation_filefield_widget/foundation_filefield_widget.html:4
+#: templates/foundation_filefield_widget/foundation_filefield_widget.html:11
 msgid "No file chosen"
 msgstr ""
 
-#: foundation_filefield_widget/templates/foundation_filefield_widget/foundation_filefield_widget.html:8
-msgid "Choose File"
+#: templates/foundation_filefield_widget/foundation_filefield_widget.html:8
+msgid "Choose&nbsp;File"
 msgstr ""
 
-#: foundation_filefield_widget/templates/foundation_filefield_widget/foundation_filefield_widget.html:11
+#: templates/foundation_filefield_widget/foundation_filefield_widget.html:11
+#: templates/foundation_filefield_widget/foundation_imagefield_widget.html:11
 msgid "Clear"
+msgstr ""
+
+#: templates/foundation_filefield_widget/foundation_imagefield_widget.html:8
+msgid "Choose&nbsp;an&nbsp;image"
 msgstr ""

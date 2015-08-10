@@ -5,7 +5,7 @@
         {{input}}
     </div>
     <div class="small-3 columns filefield-select">
-        <a id="{{id}}_select_button" onclick="$($(this).parent().prev().children()[1]).trigger('click');" class="postfix button compact file-button-replacer">{% trans "Choose File" %}</a>
+        <a id="{{id}}_select_button" onclick="$($(this).parent().prev().children()[1]).trigger('click');" class="postfix button compact file-button-replacer">{% trans "Choose&nbsp;File" %}</a>
     </div>
     <div class="small-3 columns filefield-reset">
         <a id="{{id}}_reset_button" onclick="$($(this).parent().prev().prev().children()[1]).replaceWith($($(this).parent().prev().prev().children()[1]).val('').clone(true));$($(this).parent().prev().prev().children()[0]).val('{% trans "No file chosen" %}')" class="postfix button compact secondary">{% trans "Clear" %}</a>

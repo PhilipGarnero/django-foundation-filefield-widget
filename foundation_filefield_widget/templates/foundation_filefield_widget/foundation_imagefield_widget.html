@@ -1,0 +1,13 @@
+{% load i18n %}
+<div class="row collapse imagefield">
+    <div id="{{id}}_container" class="small-12 columns imagefield-container">
+        <img class="imagefield-preview" src="{% if value %}{{value.url}}{% else %}{{STATIC_URL}}foundation_filefield_widget/img-placeholder.jpg{% endif %}" />
+        {{input}}
+    </div>
+    <div class="small-6 columns imagefield-select">
+        <a id="{{id}}_select_button" onclick="$($(this).parent().prev().children()[1]).trigger('click');" class="postfix button compact image-button-replacer">{% trans "Choose&nbsp;an&nbsp;image" %}</a>
+    </div>
+    <div class="small-6 columns imagefield-reset">
+        <a id="{{id}}_reset_button" onclick="$($(this).parent().prev().prev().children()[0]).attr('src', '{{STATIC_URL}}foundation_filefield_widget/img-placeholder.jpg')" class="postfix button compact secondary">{% trans "Clear" %}</a>
+    </div>
+</div>

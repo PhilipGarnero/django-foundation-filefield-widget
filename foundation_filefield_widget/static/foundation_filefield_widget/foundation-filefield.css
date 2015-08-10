@@ -8,7 +8,18 @@
 
 .file-input-replacer {
     width: 100%;
-    position: absolute;
     top: 0;
     cursor: pointer;
+}
+
+.filefield-select {
+    overflow: hidden;
+}
+
+.filefield-reset {
+    overflow: hidden;
+}
+
+.hidden {
+    display: none;
 }
